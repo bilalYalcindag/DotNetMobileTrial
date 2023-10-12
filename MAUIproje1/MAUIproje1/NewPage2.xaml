@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUIproje1.NewPage2"
+             Title="NewPage2">
+
+    <Grid Padding="10" BackgroundColor="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+       
+        <Label TextColor="white" Text="0,5" FontSize="50" FontAttributes="Bold"
+                HorizontalTextAlignment="End" VerticalTextAlignment="Start"/>
+
+        <StackLayout Padding="15" Spacing="30" Orientation="Horizontal"  Grid.Row="1">
+            <Image Source="https://icons8.com/icon/67884/delete" VerticalOptions="Center" HeightRequest="30"/>
+            <Image Source="https://icons8.com/icon/67884/delete" VerticalOptions="Center" HeightRequest="30"/>
+            <Image Source="https://icons8.com/icon/67884/delete" VerticalOptions="Center" HeightRequest="30"/>
+
+            <Image Source="https://icons8.com/icon/67884/delete" VerticalOptions="Center" HeightRequest="30" HorizontalOptions="EndAndExpand"/>
+            
+        </StackLayout>
+
+        <Border HeightRequest="1" Margin="0,20,0,30" BackgroundColor="DimGrey" Grid.Row="2"/>
+
+        <ScrollView Grid.Row="3">
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button FontSize="30" FontAttributes="Bold" HeightRequest="80" WidthRequest="80" CornerRadius="40"
+                        BackgroundColor="#252525" TextColor="Red" Text="C" Clicked="Button_Clicked" />
+                <Button FontSize="30" FontAttributes="Bold" HeightRequest="80" WidthRequest="80" CornerRadius="40"
+        BackgroundColor="#252525" TextColor="White" Text="7" Grid.Row="1" />
+                <Button FontSize="30" FontAttributes="Bold" HeightRequest="80" WidthRequest="80" CornerRadius="40"
+        BackgroundColor="#252525" TextColor="White" Text="4" Grid.Row="2" />
+                <Button FontSize="30" FontAttributes="Bold" HeightRequest="80" WidthRequest="80" CornerRadius="40"
+        BackgroundColor="#252525" TextColor="White" Text="1" Grid.Row="3" />
+                <Button FontSize="30" FontAttributes="Bold" HeightRequest="80" WidthRequest="80" CornerRadius="40"
+        BackgroundColor="#252525" TextColor="White" Text="+/-" Grid.Row="4" />
+
+                <!--Birinci sutun -->
+                <Button FontSize="30" FontAttributes="Bold" HeightRequest="80" WidthRequest="80" CornerRadius="40"
+                BackgroundColor="#252525" TextColor="Red" Text="()" Grid.Column="1" />
+                <Button FontSize="30" FontAttributes="Bold" HeightRequest="80" WidthRequest="80" CornerRadius="40"
+        BackgroundColor="#252525" TextColor="White" Text="8" Grid.Row="1" Grid.Column="1" />
+                <Button FontSize="30" FontAttributes="Bold" HeightRequest="80" WidthRequest="80" CornerRadius="40"
+        BackgroundColor="#252525" TextColor="White" Text="5" Grid.Row="2" Grid.Column="1" />
+                <Button FontSize="30" FontAttributes="Bold" HeightRequest="80" WidthRequest="80" CornerRadius="40"
+        BackgroundColor="#252525" TextColor="White" Text="2" Grid.Row="3"  Grid.Column="1"/>
+                <Button FontSize="30" FontAttributes="Bold" HeightRequest="80" WidthRequest="80" CornerRadius="40"
+        BackgroundColor="#252525" TextColor="White" Text="0" Grid.Row="4"  Grid.Column="1"/>
+                
+                <!-- ikinci sutun-->
+
+                <Button FontSize="30" FontAttributes="Bold" HeightRequest="80" WidthRequest="80" CornerRadius="40"
+                BackgroundColor="#252525" TextColor="Red" Text="%" Grid.Column="2" />
+                <Button FontSize="30" FontAttributes="Bold" HeightRequest="80" WidthRequest="80" CornerRadius="40"
+        BackgroundColor="#252525" TextColor="White" Text="9" Grid.Row="1" Grid.Column="2" />
+                <Button FontSize="30" FontAttributes="Bold" HeightRequest="80" WidthRequest="80" CornerRadius="40"
+        BackgroundColor="#252525" TextColor="White" Text="6" Grid.Row="2" Grid.Column="2" />
+                <Button FontSize="30" FontAttributes="Bold" HeightRequest="80" WidthRequest="80" CornerRadius="40"
+        BackgroundColor="#252525" TextColor="White" Text="3" Grid.Row="3"  Grid.Column="2"/>
+                <Button FontSize="30" FontAttributes="Bold" HeightRequest="80" WidthRequest="80" CornerRadius="40"
+        BackgroundColor="#252525" TextColor="White" Text="," Grid.Row="4"  Grid.Column="2"/>
+                
+                <!--ucuncu sutun -->
+                <Button FontSize="30" FontAttributes="Bold" HeightRequest="80" WidthRequest="80" CornerRadius="40"
+        BackgroundColor="#252525" TextColor="Red" Text="/" Grid.Column="3" />
+                <Button FontSize="30" FontAttributes="Bold" HeightRequest="80" WidthRequest="80" CornerRadius="40"
+        BackgroundColor="#252525" TextColor="White" Text="X" Grid.Row="1" Grid.Column="3" />
+                <Button FontSize="30" FontAttributes="Bold" HeightRequest="80" WidthRequest="80" CornerRadius="40"
+        BackgroundColor="#252525" TextColor="White" Text="-" Grid.Row="2" Grid.Column="3" />
+                <Button FontSize="30" FontAttributes="Bold" HeightRequest="80" WidthRequest="80" CornerRadius="40"
+        BackgroundColor="#252525" TextColor="White" Text="+" Grid.Row="3"  Grid.Column="3"/>
+                <Button FontSize="30" FontAttributes="Bold" HeightRequest="80" WidthRequest="80" CornerRadius="40"
+        BackgroundColor="#252525" TextColor="White" Text="=" Grid.Row="4"  Grid.Column="3"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </Grid>   
+            
+        </ScrollView>
+
+    </Grid>
+
+</ContentPage>
